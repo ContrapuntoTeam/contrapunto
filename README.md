@@ -20,4 +20,15 @@ Una vez finaliado el flujo se debe presentar de una forma creativa el resultado 
 
 ## Requerimientos específicos
 
+El sistema deberá garantizar, pero no por ello limitarse a las siguientes especificaciones, escritas en formato de historias de usuario:
+
+1. Como usuario ocasional quiero ver los resultados de un contrapunto para formar una opinión al respecto.
+2. Como usuario avanzado quiero diseñar mis propios contrapuntos para que otros usuarios los resuelvan y con ello hacer estudios de opinión.
+3. Como usuario quiero contestar un contrapunto en forma total o parcial de un modo equilibrado, para brindar mi opinión.
+4. Como usuario quiero recibir emblemas y puntos de experiencia conforme avanza mi uso de la plataforma para poder construir mi reputación.
+5. Como usuario quiero recibir sugerencias de contrapuntos a contestar conforme el perfil que estoy dejando en mi sistema para encontrar más fácilmente asuntos en los que podría interesarme brindar mi opinión.
+6. Como usuario ocasional quiero poder embeber en mi blog o página web los resultados explorables de un contrapunto, para evidenciar la opinión del público respecto de un tema que me parezca relevante.
+
+## Criterios de aceptación
+
 TBD
