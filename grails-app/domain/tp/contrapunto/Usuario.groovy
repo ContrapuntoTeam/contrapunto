@@ -2,6 +2,8 @@ package tp.contrapunto
 
 class Usuario {
 	
+	static hasMany = [contrapunto:tp.contrapunto.Contrapunto]
+	
 	String nombre
 	String nick
 	String password
@@ -11,7 +13,7 @@ class Usuario {
 	Integer edad
 	Integer puntaje
 	
-	static HasMany=[contrpunto:Contrapunto]
+	
 
     static constraints = {
 		 nombre(blank:false, maxSize:10)

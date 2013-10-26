@@ -2,14 +2,21 @@ package tp.contrapunto
 
 class Contrapunto {
 	
+	static belongsTo = [usuario:tp.contrapunto.Usuario]
+	static hasMany = [items:Item]
+	
 	String titulo
 	String categoria
-	Integer cantidadOpciones
-    String opciones
-	static BelongsTo=[usuario:Usuario]
-	
+	Integer cantidadItems
 
     static constraints = {
 		titulo (blank:false, unique:true, nullable: false)
     }
+	
+	String toString(){
+		
+		return "${titulo}"
+	}
+	
 }
+

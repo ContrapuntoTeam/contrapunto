@@ -1,0 +1,224 @@
+#todo{
+margin: 0 auto;
+}
+
+#principalesContenedor{
+	z-index: 10;
+	background-color: white;
+	padding-top: 20px;
+	margin-left: 10px;
+	float:left;
+}
+#misContrapuntosContenedor{
+	z-index: 10;
+	background-color: white;
+	padding-top: 20px;
+	margin-left: 10px;
+	float:left;
+}
+#TituloPrincipales{
+	color:blue;
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 32px;
+	
+}
+#TituloMisContrapuntos{
+	color:blue;
+	float:left;
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 32px;
+	width:875px;
+	
+}
+#TituloPopup{
+	color:blue;
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 32px;
+	text-align:left;
+	padding-left:20px;
+	padding-top:10px;
+	
+}
+#AgregarContrpunto{
+	color:blue;
+	float: left;
+	width:100px;
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 32px;
+	width:100px;
+	
+}
+.ControlesContrapunto{
+	color:blue;
+	float: left;
+	width:100px;
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 32px;
+	width:134px;
+	padding-left:5px;
+	
+}
+.principales{
+	float: left;
+	clear: left;
+	z-index: 11;
+}
+.miContrapunto{
+	float: left;
+	clear: left;
+	z-index: 11;
+}
+.principalesLadoIzq{
+	background-image: url("images/principales_izq.jpg");
+	width: 10px;
+	height: 98px;
+	float:left;
+}
+.principalesLadoDer{
+	background-image: url("images/principales_der.jpg");
+	width: 10px;
+	height: 98px;
+	float:left;
+}
+.principalesCentro{
+	background-image: url("images/principales_cen.jpg");
+	background-repeat: repeat-x;
+	width: 550px;
+	height: 98px;
+	float:left;
+}
+.miContrapuntoLadoIzq{
+	background-image: url("images/principales_izq.jpg");
+	width: 10px;
+	height: 98px;
+	float:left;
+}
+.miContrapuntoLadoDer{
+	background-image: url("images/principales_der.jpg");
+	width: 10px;
+	height: 98px;
+	float:left;
+}
+.miContrapuntoCentro{
+	background-image: url("images/principales_cen.jpg");
+	background-repeat: repeat-x;
+	width: 950px;
+	height: 98px;
+	float:left;
+}
+.tituloTop{
+	padding-top:5px;
+	color: gray;
+	font-weight: bold;
+	font-size: 18px;
+}
+.verResultadosLink{
+	float:right;
+	margin-top:25px;
+}
+#categoriasContenedor{
+	z-index: 10;
+	background-color: white;
+	padding-top: 20px;
+	padding-left: 60px;
+	float:left;
+}
+.categoriasBordeSup{
+	background-image: url("images/categoriasBordeSup.png");
+	width: 284px;
+	height: 14px;
+	float:left;
+	clear: left;
+}
+.categoriasBordeInf{
+	background-image: url("images/categoriasBordeInf.png");
+	width: 284px;
+	height: 9px;
+	float:left;
+	clear: left;
+}
+
+.categoriasCentro{
+	background-image: url("images/categoriasCen.png");
+	width: 284px;
+	height: 500px;
+	float:left;
+	clear: left;
+	font-weight:bold;
+	background-repeat: repeat-y;
+}
+
+
+#encabezado{
+	margin: 0 auto;
+	width:1000px;
+	height:66px;
+	background-image: url("images/encabezado_fondo.jpg");
+	background-repeat: repeat-x;
+	/*background-color: pink;*/
+	/*background-image: url(encabezado_fondo.jpg);*/
+}
+#adentro{
+margin: 0 auto;
+background-color: white;
+text-align:center;
+width:650px;
+height:600px;
+}
+#bordeizquierdo{
+float:left;
+height:100%;
+width: 5px;
+background-color: gray;
+}
+#bordederecho{
+float:right;
+height:100%;
+width: 5px;
+background-color: gray;
+}
+#contenido{
+background-color: pink;
+margin-top:35px;
+margin-left:30px;
+width:700px;
+height:400px;
+float:left;
+overflow:auto;
+}
+#lista{
+margin-top: 35px;
+margin-right:30px;
+float:right;
+width:200px;
+}
+.opclista{
+background-color:#505050;
+float:left;
+clear:left;
+width:200px;
+text-decoration: bold;
+}
+.contenidolista{
+background-color:#707070;
+float:left;
+clear:left;
+width: 200px;
+}
+body{
+background-color: black;
+color:blue;
+font-family: verdana;
+}
+
+#bordeinferior{
+width:1000px;
+float:left;
+height:5px;
+background-color: gray;
+}

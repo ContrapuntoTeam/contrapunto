@@ -594,3 +594,26 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+#header
+{
+	background: rgba(0,0,150,0.5);
+	padding: 1em 1em 1em 1em;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-weight: bold;
+}
+.header-sub
+{
+	color: #fff;
+	font-size: 0.75em;
+	font-style: italic;
+}
+#footer
+{
+	font-size: 1em;
+	font-style: italic;
+	padding: 2em 1em 2em 1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	clear: both;
+}

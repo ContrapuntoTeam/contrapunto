@@ -1,0 +1,83 @@
+#todo{
+margin: 0 auto;
+}
+#menuu{
+margin: 0 auto;
+width:900px;
+height:48px;
+}
+
+.nico{
+width:100px;
+}
+
+#encabezado{
+margin: 0 auto;
+width:900px;
+height:200px;
+}
+#adentro{
+margin: 0 auto;
+margin-top:7px;
+background-color: 2F2F2F;
+width:900px;
+height:700px;
+}
+#bordeizquierdo{
+float:left;
+height: 100%;
+width: 5px;
+background-color: gray;
+}
+#bordederecho{
+float:right;
+height: 100%;
+width: 5px;
+background-color: gray;
+}
+#contenido{
+margin-top:35px;
+margin-left:30px;
+width:600px;
+height:400px;
+float:left;
+overflow:auto;
+}
+#lista{
+margin-top: 35px;
+margin-right:30px;
+float:right;
+width:200px;
+}
+.opclista{
+background-color:#505050;
+float:left;
+clear:left;
+width:200px;
+text-decoration: bold;
+}
+.contenidolista{
+background-color:#707070;
+float:left;
+clear:left;
+width: 200px;
+}
+body{
+background-color: black;
+color:white;
+font-family: verdana;
+}
+#bordeinferior{
+width:900px;
+float:left;
+height:5px;
+background-color: gray;
+}
+
+#pie{
+width:900px;
+float:left;
+margin-top:50px;
+clear:both;
+text-align:center;
+}
