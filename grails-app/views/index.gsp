@@ -87,6 +87,7 @@
 			<g:link controller="Usuario" action="list">USUARIOS</g:link>
 			<g:link controller="Contrapunto" action="list">CONTRAPUNTOS</g:link>
 			<g:link controller="Item" action="list">ITEMS</g:link>
+			<g:link controller="Login" action="Auth">INICIAR SESION</g:link>
 			
 			<h2>Contrapuntos disponibles</h2>
 

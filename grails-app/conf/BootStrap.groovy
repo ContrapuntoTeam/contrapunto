@@ -1,8 +1,36 @@
+import tp.contrapunto.Rol
+import tp.contrapunto.Usuario
+import tp.contrapunto.UsuarioRol
+
 class BootStrap {
 
     def init = { servletContext ->
 		
+		/*Spring security Core
+		
+		def adminRole = new Rol(authority: 'ROLE_ADMIN').save(flush: true)
+		def userRole = new Rol(authority: 'ROLE_USER').save(flush: true)
+  
+		def testUser = new Usuario(username: 'me', enabled: true, password: 'password')
+		testUser.save(flush: true)
+  
+		UsuarioRol.create testUser, adminRole, true
+  
+		assert Usuario.count() == 1
+		assert Rol.count() == 2
+		assert UsuarioRol.count() == 1
+		
+		
+		
+	-----------------------------------------------------------------------------------------------------------------------*/	
+		
+		def adminRole = new Rol(authority: 'ROLE_ADMIN').save(flush: true)
+		def userRole = new Rol(authority: 'ROLE_USER').save(flush: true)
+		
+		
 			def Carlos = new tp.contrapunto.Usuario(nombre: "Carlos",
+									username: "Charlie",
+									enabled: "true",
 									nick: "Charlie",
 									password: "12345",
 									email: "example@hotmail.com",
@@ -13,6 +41,30 @@ class BootStrap {
 									)
 			Carlos.save()
 			if(Carlos.hasErrors()){println Carlos.errors}
+			
+			
+			UsuarioRol.create Carlos, adminRole, true
+			
+			
+			def Eze = new tp.contrapunto.Usuario(nombre: "Ezequiel",
+				username: "eze",
+				enabled: "true",
+				nick: "eze",
+				password: "12345",
+				email: "example@hotmail.com",
+				fechaNacimiento: (new Date() -100),
+				sexo: "Masculino",
+				edad: "24",
+				puntaje: "0"
+				)
+			Eze.save()
+			if(Eze.hasErrors()){println Eze.errors}
+			
+				  assert Usuario.count() == 2
+				  assert Rol.count() == 2
+				  assert UsuarioRol.count() == 1
+				  
+				  
 			
 			def Contrapunto1 = new tp.contrapunto.Contrapunto(titulo: "Gaseosas",
 															categoria: "Productos",
