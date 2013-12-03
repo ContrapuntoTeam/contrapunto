@@ -28,6 +28,8 @@
 					
 						<th><g:message code="item.contrapunto.label" default="Contrapunto" /></th>
 					
+						<g:sortableColumn property="imagenUrl" title="${message(code: 'item.imagenUrl.label', default: 'Imagen Url')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +39,8 @@
 						<td><g:link action="show" id="${itemInstance.id}">${fieldValue(bean: itemInstance, field: "nombre")}</g:link></td>
 					
 						<td>${fieldValue(bean: itemInstance, field: "contrapunto")}</td>
+					
+						<td>${fieldValue(bean: itemInstance, field: "imagenUrl")}</td>
 					
 					</tr>
 				</g:each>

@@ -76,6 +76,7 @@ class BootStrap {
 			
 			def Item1 = new tp.contrapunto.Item(identificador: 1,
 												nombre: "Coca-Cola",
+												imagenUrl: "coca.jpg",
 												contrapunto: Contrapunto1					
 												)
 			Item1.save()
@@ -83,11 +84,28 @@ class BootStrap {
 			
 			def Item2 = new tp.contrapunto.Item(identificador: 2,
 												nombre: "Pepsi",
+												imagenUrl: "pepsi.jpg",
 												contrapunto: Contrapunto1
 												)
 			Item2.save()
 			if(Item2.hasErrors()){println Item2.errors}
+		
+			def Item3 = new tp.contrapunto.Item(identificador: 3,
+				nombre: "Fanta",
+				imagenUrl: "fanta.jpg",
+				contrapunto: Contrapunto1
+				)
+			Item3.save()
+			if(Item3.hasErrors()){println Item3.errors}
 
+			def Item4 = new tp.contrapunto.Item(identificador: 4,
+				nombre: "Sprite",
+				imagenUrl: "sprite.jpg",
+				contrapunto: Contrapunto1
+				)
+			Item4.save()
+			if(Item4.hasErrors()){println Item4.errors}
+			
 		}
     def destroy = {
     }

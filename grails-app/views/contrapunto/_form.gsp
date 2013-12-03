@@ -48,6 +48,6 @@
 		<g:message code="contrapunto.usuario.label" default="Usuario" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="usuario" name="usuario.id" from="${tp.contrapunto.Usuario.list()}" optionKey="id" required="" value="${contrapuntoInstance?.usuario?.id}" class="many-to-one"/>
+	<g:select id="usuario" name="usuario.id" from="${tp.contrapunto.Usuario.list()}" optionKey="id" optionValue="nombre" required="" value="${contrapuntoInstance?.usuario?.id}" class="many-to-one"/>
 </div>
 

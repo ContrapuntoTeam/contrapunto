@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${itemInstance?.imagenUrl}">
+				<li class="fieldcontain">
+					<span id="imagenUrl-label" class="property-label"><g:message code="item.imagenUrl.label" default="Imagen Url" /></span>
+					
+						<span class="property-value" aria-labelledby="imagenUrl-label"><g:fieldValue bean="${itemInstance}" field="imagenUrl"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

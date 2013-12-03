@@ -1,22 +1,40 @@
 package tp.contrapunto
+import tp.contrapunto.Contrapunto
+import tp.contrapunto.Item
 
 import org.springframework.dao.DataIntegrityViolationException
 
 class ContrapuntoController {
-
+	
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-
+	
+	def bandera = 0
+	
+	def listaConPuntos(){
+		if(bandera == 0 ){
+			def canItems = params.cantItems
+			
+		}
+	}
+	
 	def ganador(){
 		
-		def mapa = [MiItem:Item.get(params.identificador)]
-		render "El ganador del contrapunto es: "+mapa.MiItem.nombre
+		def mapa = [MiItem: params.ItemID]
+			
+		//def contr = [MiContr:Contrapunto.get(params.IdContr)]		
+		//render "El ganador del contrapunto es: "+mapa.MiItem
+		//mapa.each() { key, value -> render "${value}" };
 	}
+	
+
 	
 	def contrap(){
 		
 		render(view:"contrap")
 	}
+
 	
+		
 	def index() {
         redirect(action: "list", params: params)
     }

@@ -21,13 +21,40 @@
 		<!-- <div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div> -->
 		
 		<!-- Linea modificada -->
-		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'encabezado.jpg')}"/></div> 
-		<g:render template="/layouts/header"></g:render>
+	<div id="todo">
+
+		<div id="encabezado">
+			<div id="divImgEncabezado" class="contenidoEncabezado">
+				<img src="${resource(dir: 'images', file: 'logo.jpg')}" width="210" height="66px">
+			</div>
+			<div id="menu">
+			<table>
+				<tr>
+					<td>
+						<a href="/Tp-Contrapunto/"><img src="${resource(dir: 'images', file: 'boton_inicio.png')}" width="74px" height="58px"/></a>
+					</td>
+					<td>
+						<g:link href="#" controller="contrapunto" action="index"><img src="${resource(dir: 'images', file: 'boton_miscontrapuntos.png')}" width="122px" height="58px"/></g:link>
+					</td>
+					<td>
+						<g:link href="#" controller="usuario" action="index"><img src="${resource(dir: 'images', file: 'boton_micuenta.png')}" width="74px" height="58px"/></g:link>
+					</td>
+					<td>
+						<g:link href="#" controller="login" action="auth"><img src="${resource(dir: 'images', file: 'boton_acceder.jpg')}" width="123px" height="44px"/></g:link>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<div id="adentro">
+			
 		<g:layoutBody/>
-		<g:render template="/layouts/footer"></g:render>
-		<div class="footer" role="contentinfo"></div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>
 		<r:layoutResources />
+		</div>
+		<div id="pie">
+			<p>Powered by Charly and the grails factory ;)</p><br/>
+		</div>
+</div>
 	</body>
 </html>

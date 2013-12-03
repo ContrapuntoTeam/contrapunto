@@ -21,11 +21,19 @@ class ItemController {
 
     def save() {
         def itemInstance = new Item(params)
+		def uploadedFile = request.getFile('payload')
+		itemInstance.imagenUrl = uploadedFile.originalFilename
         if (!itemInstance.save(flush: true)) {
-            render(view: "create", model: [itemInstance: itemInstance])
+            render(view: "create", model: [itemInstance: itemInstance])			
             return
         }
-
+		
+		def webRootDir = servletContext.getRealPath("/")
+		def userDir = new File(webRootDir, "/images/items/")
+		userDir.mkdirs()
+		uploadedFile.transferTo( new File( userDir, uploadedFile.originalFilename))
+		itemInstance.imagenUrl = uploadedFile.originalFilename
+		
         flash.message = message(code: 'default.created.message', args: [message(code: 'item.label', default: 'Item'), itemInstance.id])
         redirect(action: "show", id: itemInstance.id)
     }
