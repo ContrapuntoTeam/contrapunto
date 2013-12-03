@@ -20,7 +20,7 @@ class ContrapuntoController {
 	def ganador(){
 		
 		def mapa = [MiItem: params.ItemID]
-			
+		//	
 		//def contr = [MiContr:Contrapunto.get(params.IdContr)]		
 		//render "El ganador del contrapunto es: "+mapa.MiItem
 		//mapa.each() { key, value -> render "${value}" };
